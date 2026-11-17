@@ -1,10 +1,12 @@
-# Kitesurf prebuilt Worker
+# Kitesurf prebuilt Worker with API-key authentication
 
 Download and deploy the compiled Kitesurf Worker without running Bazel or building the source yourself.
 
+Every HTTP and WebSocket request is protected by a required KITESURF_API_KEY Bearer token. The release does not include anyone's key; each deployer configures their own Cloudflare Worker secret.
+
 ## Download
 
-Get **[kitesurf-worker-bundle-2026-11-17.zip](https://github.com/aur0/kitesurf-worker-build/releases/download/prebuilt-2026-11-17/kitesurf-worker-bundle-2026-11-17.zip)** from the [release page](https://github.com/aur0/kitesurf-worker-build/releases). The ZIP contains the already-compiled Worker, its assets, Wrangler configuration, and license notices. It does not contain an API key.
+Get **[kitesurf-worker-bundle-2026-11-17.zip](https://github.com/aur0/kitesurf-worker-build-auth/releases/download/prebuilt-2026-11-17/kitesurf-worker-bundle-2026-11-17.zip)** from the [release page](https://github.com/aur0/kitesurf-worker-build-auth/releases). The ZIP contains the already-compiled Worker, its assets, Wrangler configuration, and license notices. It does not contain an API key.
 
 This build omits the bundled Chrome DevTools visual frontend. The browser engine still supports CDP clients such as Puppeteer and Playwright, including page navigation, HTML retrieval, and screenshots.
 
